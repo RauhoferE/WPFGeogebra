@@ -1,0 +1,26 @@
+﻿// -----------------------------------------------------------------------
+//  <copyright file="SmallestXValue.cs" company="FH Wiener Neustadt">
+//      Copyright (c) Emre Rauhofer. All rights reserved.
+//  </copyright>
+//  <author>Emre Rauhofer</author>
+//  <summary>
+//  This program is a plot.
+//  </summary>
+// -----------------------------------------------------------------------
+namespace ProjectThickLines.ViewModels
+{
+    /// <summary>
+    /// Gets the <see cref="SmallestXValue"/> class.
+    /// </summary>
+    public class SmallestXValue : IXYAxis
+    {
+        /// <summary>
+        /// Gets the name of the value.
+        /// </summary>
+        /// <value> A string name. </value>
+        public string Name
+        {
+            get { return "SmallestXValue"; }
+        }
+    }
+}

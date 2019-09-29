@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="ProjectThickLines.Models.ContainerFileForSerealization">
+    <Position X="3.5" Y="9.25" Width="6.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ContainerFileForSerealization.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="PolyFunctions" />
+      <Field Name="TrigFunctions" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ProjectThickLines.Models.Cosine" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Cosine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectThickLines.Models.FunctionSerealizer">
+    <Position X="6.75" Y="2" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\FunctionSerealizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectThickLines.Models.MathFunction">
+    <Position X="2" Y="2" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAASAAQAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\MathFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectThickLines.Models.PolyFunction">
+    <Position X="0.5" Y="5.5" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACQAQAAEAAAAAAAAACAAAA=</HashCode>
+      <FileName>Models\PolyFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectThickLines.Models.Sine" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Sine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectThickLines.Models.Tangent" BaseTypeListCollapsed="true">
+    <Position X="5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Tangent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectThickLines.Models.TrigFunction">
+    <Position X="6.5" Y="5.5" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAQAAAAAABCAAQAAAAAAAEAAAADAAAA=</HashCode>
+      <FileName>Models\TrigFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectThickLines.ViewModels.MainWindowVM">
+    <Position X="31.75" Y="2.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAQgAAABKAAAAAABAAAAAQAAAAIAAAAAAAAAAAAEA=</HashCode>
+      <FileName>ViewModels\MainWindowVM.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="functionListVM" />
+      <Field Name="grid" />
+      <Field Name="zoomVM" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjectThickLines.ViewModels.GridVM" BaseTypeListCollapsed="true">
+    <Position X="33.5" Y="7" Width="4" />
+    <TypeIdentifier>
+      <HashCode>gABUICDAEIKAQAhAEAAIIoAAkIACQRQAYgcAAMCCSkA=</HashCode>
+      <FileName>ViewModels\GridVM.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="yAxeGrid" />
+      <Field Name="xAxeGrid" />
+      <Field Name="xAxeStart" />
+      <Field Name="yAxeStart" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectThickLines.ViewModels.FunctionListVM">
+    <Position X="19.25" Y="1" Width="10" />
+    <TypeIdentifier>
+      <HashCode>BAIEQCAAACYAIIYAAAQAQogAiQBAIQAAIgAAAIAkAAA=</HashCode>
+      <FileName>ViewModels\FunctionListVM.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="PolyFunctions" />
+      <Property Name="TrigFunctions" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ProjectThickLines.ViewModels.ZoomVM" BaseTypeListCollapsed="true">
+    <Position X="40" Y="2.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAABABAABQAQEAAgEgAgAAIAAAACAAACAAAUAA=</HashCode>
+      <FileName>ViewModels\ZoomVM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectThickLines.ViewModels.TrigFunctionVMEventArgs">
+    <Position X="18.5" Y="11" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\TrigFunctionVMEventArgs.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="OldItem" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjectThickLines.ViewModels.PolyFunctionVMEventArgs">
+    <Position X="21" Y="16.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\PolyFunctionVMEventArgs.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PolyFunctionVM" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjectThickLines.ViewModels.IntValueEventArgs">
+    <Position X="46" Y="1" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAQAAA=</HashCode>
+      <FileName>ViewModels\IntValueEventArgs.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="XYAxisEnum" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjectThickLines.ViewModels.TrigFunctionVM">
+    <Position X="10.75" Y="9.5" Width="6.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAEACAAiAAhAIAAACAAAQAgIAAAkggAkUhIAAEQRA=</HashCode>
+      <FileName>ViewModels\TrigFunctionVM.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="TrigFunctionM" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProjectThickLines.ViewModels.PolyFunctionVM">
+    <Position X="0.5" Y="14" Width="6.75" />
+    <AssociationLine Name="Model" Type="ProjectThickLines.Models.PolyFunction" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.969" Y="14" />
+        <Point X="1.969" Y="11.107" />
+        <Point X="0.812" Y="11.107" />
+        <Point X="0.812" Y="8.213" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEJCAAiAAhAIAAADAAAQAiAQAGFCgAAwlMgAEQRA=</HashCode>
+      <FileName>ViewModels\PolyFunctionVM.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Model" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProjectThickLines.ViewModels.SmallestYValue" BaseTypeListCollapsed="true">
+    <Position X="54.75" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\SmallestYValue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectThickLines.ViewModels.SmallestXValue" BaseTypeListCollapsed="true">
+    <Position X="56.75" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\SmallestXValue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectThickLines.ViewModels.BiggestYValue" BaseTypeListCollapsed="true">
+    <Position X="53" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\BiggestYValue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectThickLines.ViewModels.BiggestXValue" BaseTypeListCollapsed="true">
+    <Position X="58.75" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\BiggestXValue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectThickLines.ViewModels.GridLines">
+    <Position X="41" Y="9.25" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAGAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAg=</HashCode>
+      <FileName>ViewModels\GridLines.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectThickLines.ViewModels.ApplicationSerealizer">
+    <Position X="16.75" Y="19.75" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ApplicationSerealizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectThickLines.ViewModels.TrigFunctionVMContainer">
+    <Position X="16.5" Y="23.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAACAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>ViewModels\TrigFunctionVMContainer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="FunctionColor" />
+      <Field Name="TrigFunction" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjectThickLines.ViewModels.PolyFunctionVMContainer">
+    <Position X="2.5" Y="23.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAACAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>ViewModels\PolyFunctionVMContainer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="FunctionColor" />
+      <Field Name="PolyFunction" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjectThickLines.ViewModels.MainWindowVMContainer">
+    <Position X="16.75" Y="21.25" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>ViewModels\MainWindowVMContainer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="GridVMContainer" />
+      <Field Name="FunctionalListVMContainer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjectThickLines.ViewModels.FunctionalListVMContainer">
+    <Position X="10.5" Y="20.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\FunctionalListVMContainer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="PolyFunctionVMContainers" />
+      <Field Name="TrigFunctionVMContainers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ProjectThickLines.ViewModels.GridVMContainer">
+    <Position X="24" Y="20.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACBAAIAAAABAAAAAIAAAAAACAQQAQAIAAIAAAAA=</HashCode>
+      <FileName>ViewModels\GridVMContainer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ColorXAxis" />
+      <Field Name="ColorXAxisGrid" />
+    </ShowAsAssociation>
+  </Class>
+  <Struct Name="ProjectThickLines.ViewModels.ColorVM">
+    <Position X="12" Y="28.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAKAEAAwA=</HashCode>
+      <FileName>ViewModels\ColorVM.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="ProjectThickLines.Models.IAngle">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\IAngle.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ProjectThickLines.ViewModels.IXYAxis">
+    <Position X="51" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\IXYAxis.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
