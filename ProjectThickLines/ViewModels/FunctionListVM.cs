@@ -205,10 +205,8 @@ namespace ProjectThickLines.ViewModels
                         try
                         {
                             var filePath = saveFileDialogue.FileName;
-                            List<PolyFunction> l1 = this.PolyFunctions.Select(e => e.Current).ToList();
-                            List<TrigFunction> l2 = this.TrigFunctions.Select(e => e.Current).ToList();
-                            var container = new ContainerFileForSerealization(l1, l2);
-                            FunctionSerealizer.Save(filePath, container);
+                            var container = new FunctionalListVMContainer(this);
+                            FunctionSerealizerVM.Save(filePath, container);
                         }
                         catch (Exception ex)
                         {
@@ -234,7 +232,8 @@ namespace ProjectThickLines.ViewModels
                         try
                         {
                             var filePath = openFileDialog1.FileName;
-                            var container = FunctionSerealizer.Load(filePath);
+
+                            var container = FunctionSerealizerVM.Load(filePath);
                             this.AddSavedFunctionsToList(container);
                         }
                         catch (Exception ex)
@@ -384,7 +383,7 @@ namespace ProjectThickLines.ViewModels
         /// This method adds saved functions to the current lists.
         /// </summary>
         /// <param name="c"> The container file. </param>
-        public void AddSavedFunctionsToList(ContainerFileForSerealization c)
+        public void AddSavedFunctionsToList(FunctionalListVMContainer c)
         {
             while (this.PolyFunctions.Count != 0)
             {
@@ -396,18 +395,26 @@ namespace ProjectThickLines.ViewModels
                 this.TrigFunctions.RemoveAt(0);
             }
 
-            foreach (var item in c.TrigFunctions)
+            foreach (var item in c.TrigFunctionVMContainers)
             {
                 var vm = new TrigFunctionVM(item, this.removeCommand);
+                vm.FunctionColor = item.FunctionColor;
+                vm.StrokeThickness = item.StrokeThickness;
+                vm.Opacity = item.Opacity;
+                vm.Name = item.TrigFunction.Name;
                 vm.GetPolyline(this.SmallestXValueGrid, this.BigestXValueGrid, this.SmallestYValueGrid, this.BigestYValueGrid);
                 vm.OnTrigFunctionChanged += this.DrawNewPolyLineForTrigFunction;
                 this.TrigFunctions.Add(vm);
             }
 
-            foreach (var item in c.PolyFunctions)
+            foreach (var item in c.PolyFunctionVMContainers)
             {
-                var polyFunction = new PolyFunction(item.ParameterList);
+                var polyFunction = new PolyFunction(item.PolyFunction.ParameterList);
                 var vm = new PolyFunctionVM(polyFunction, this.removeCommandPoly);
+                vm.FunctionColor = item.FunctionColor;
+                vm.StrokeThickness = item.StrokeThickness;
+                vm.Opacity = item.Opacity;
+                vm.Name = item.PolyFunction.Name;
                 vm.GetPolyline(this.SmallestXValueGrid, this.BigestXValueGrid, this.SmallestYValueGrid, this.BigestYValueGrid);
                 vm.OnPolyFunctionChanged += this.DrawNewPolyLineForPolyFunction;
                 this.PolyFunctions.Add(vm);

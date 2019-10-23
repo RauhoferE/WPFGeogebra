@@ -63,7 +63,6 @@
     <Compile Include="Commands\Command.cs" />
     <Compile Include="Models\Cosine.cs" />
     <Compile Include="Models\IAngle.cs" />
-    <Compile Include="Models\FunctionSerealizer.cs" />
     <Compile Include="Models\MathFunction.cs" />
     <Compile Include="Models\PolyFunction.cs" />
     <Compile Include="Models\TrigFunction.cs" />
@@ -71,7 +70,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Models\ContainerFileForSerealization.cs" />
     <Compile Include="Models\Sine.cs" />
     <Compile Include="Models\Tangent.cs" />
     <Compile Include="ViewModels\ApplicationSerealizer.cs" />
@@ -80,6 +78,7 @@
     <Compile Include="ViewModels\ColorVM.cs" />
     <Compile Include="ViewModels\FunctionalListVMContainer.cs" />
     <Compile Include="ViewModels\FunctionListVM.cs" />
+    <Compile Include="ViewModels\FunctionSerealizerVM.cs" />
     <Compile Include="ViewModels\GridLines.cs" />
     <Compile Include="ViewModels\GridVM.cs" />
     <Compile Include="ViewModels\GridVMContainer.cs" />

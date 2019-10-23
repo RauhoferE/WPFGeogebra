@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="FunctionSerealizer.cs" company="FH Wiener Neustadt">
+// <copyright file="FunctionSerealizerVM.cs" company="FH Wiener Neustadt">
 //     Copyright (c) Emre Rauhofer. All rights reserved.
 // </copyright>
 // <author>Emre Rauhofer</author>
@@ -7,23 +7,23 @@
 // This program is a plot. 
 // </summary>
 //-----------------------------------------------------------------------
-namespace ProjectThickLines.Models
+namespace ProjectThickLines.ViewModels
 {
     using System;
     using System.IO;
     using System.Runtime.Serialization.Formatters.Binary;
 
     /// <summary>
-    /// The <see cref="FunctionSerealizer"/> class.
+    /// The serializer for the functions.
     /// </summary>
-    public static class FunctionSerealizer
+    public static class FunctionSerealizerVM
     {
         /// <summary>
         /// Saves the function to the given path.
         /// </summary>
         /// <param name="filePath"> The file path where the file is saved. </param>
         /// <param name="objToSerialize"> The file to be serialized. </param>
-        public static void Save(string filePath, ContainerFileForSerealization objToSerialize)
+        public static void Save(string filePath, FunctionalListVMContainer objToSerialize)
         {
             try
             {
@@ -44,14 +44,14 @@ namespace ProjectThickLines.Models
         /// </summary>
         /// <param name="filePath"> The file path where the file is saved. </param>
         /// <returns> It returns a new object. </returns>
-        public static ContainerFileForSerealization Load(string filePath)
+        public static FunctionalListVMContainer Load(string filePath)
         {
             try
             {
                 using (Stream stream = File.Open(filePath, FileMode.Open))
                 {
                     BinaryFormatter bin = new BinaryFormatter();
-                    var rez = (ContainerFileForSerealization)bin.Deserialize(stream);
+                    var rez = (FunctionalListVMContainer)bin.Deserialize(stream);
                     return rez;
                 }
             }
